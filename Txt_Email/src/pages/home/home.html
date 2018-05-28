@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <br>
+
+  <button ion-button (click)="criarArquivo()">Criar Arquivo</button>
+
+  <br>
+
+  <button ion-button (click)="lerArquivo()">Ler Arquivo</button>
+  <p>RETORNO QUE PRESTA: {{conteudoArquivo}}</p>
+
+  <br>
+
+  <ion-item>
+    <ion-label floating>TEXTO</ion-label>
+    <ion-input type="text" [(ngModel)]="textoDoArquivo"></ion-input>
+  </ion-item>
+  <button ion-button (click)="escreverNoArquivo()">Update do Arquivo</button>
+  <p>Conteudo do Arquivo: {{conteudoArquivoUpdate}}</p>
+
+  <br>
+
+  <button ion-button (click)="deletarArquivo()">Deletar Arquivo</button>
+
+  <br>
+</ion-content>

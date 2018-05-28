@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Foto
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-item>
+
+     <button ion-button icon-left full fulltype="button" (click)="tirarFotoBase64()">
+     Foto Base64
+     <ion-icon name="camera"></ion-icon>
+    </button>
+
+    <button ion-button icon-left full type="button" (click)="tirarFotoDiretorio()">
+     Foto Diretorio
+     <ion-icon name="camera"></ion-icon>
+    </button>
+
+   </ion-item>
+
+   <button ion-button full large icon-left type="button" color="light" (click)="enviarEmail()">
+     Email
+     <ion-icon name="mail"></ion-icon>
+    </button>
+
+   <ion-item>
+    <img [src]="fotoDiretorio"/>
+    <img [src]="fotoBase64"/>
+   </ion-item>
+</ion-content>

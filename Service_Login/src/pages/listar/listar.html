@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Listar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p><b><i>Usuário: {{usuario}}</i></b></p>
+
+<ion-list>
+  <button ion-item *ngFor="let d of DisciplinasAluno">
+    {{d.Disciplina}}
+  </button>
+</ion-list>
+
+<p><b>Retorno Direto</b></p>
+<ion-list>
+  <button ion-item *ngFor="let d of retorno">{{d.Disciplina}}</button>
+</ion-list>
+
+<p><b>Listar uma classe Post</b></p>
+<ion-list>
+  <button ion-list *ngFor="let d of DisciplinasAlunoPost">
+    {{d.Disciplina}}
+  </button>
+</ion-list>
+
+<p><b>Retorno Direto Post</b></p>
+<ion-list>
+  <button ion-list *ngFor="let d of retornoPost">
+    {{d.Disciplina}}
+  </button>
+</ion-list>
+</ion-content>
